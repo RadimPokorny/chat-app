@@ -227,15 +227,59 @@ textarea:focus, input:focus{
     height: auto !important;
     background-color: rgb(241, 241, 241);
     border-radius: 25px;
+    float: right;
+    margin-right: 95px;
+}
+
+.message-output{
+    overflow: hidden;
+    width: 95%;
+    text-align: left !important;
+    margin-left: 5px;
+    margin-right: 10px;
+    padding: 10px;
+    
+}
+
+.message-output p{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .line{
     width: 100%;
+    min-height: 100px;
+    margin-top: 25px;
+}
+
+.received{
+    width: 100%;
     height: auto !important;
+    position: relative;
+}
+
+.sent{
+    width: 100%;
+    height: auto !important;
+    position: relative;
 }
 
 .pfp-image-line{
     width: 15%;
     height: auto;
+    float: left;
 }
 
+.sent .message-box{
+    background-color: slateblue;
+    color: white;
+}
+
+.sent .message-box{
+    height: auto !important;
+    background-color: slateblue;
+    color: white;
+    border-radius: 25px;
+    float: right !important;
+    margin-right: 20px;
+}
