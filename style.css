@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color:grey
+    background-color:rgb(255, 255, 255)
 }
 
 p, h1, h2, h3, h4, h5, h6{
@@ -27,26 +27,25 @@ p, h1, h2, h3, h4, h5, h6{
 .semi-div{
     position: relative;
     width: 390px;
-    height: 100%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 31px;
+    box-shadow: 0 0 20px rgb(200, 200, 200)
 }
 
 .contact-info{
-    position:sticky;
-    top: 10%;
+    position:relative;
     width: 390px;
-    height: 100px;
+    height: 75px;
     background-color: slateblue;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
 
 .content{
-    position: sticky;
+    position: relative;
     width: 390px;
-    top: 20%;
     height: 400px;
     background-color: white;
     z-index: -1;
@@ -54,14 +53,46 @@ p, h1, h2, h3, h4, h5, h6{
 }
 
 .send{
-    position: fixed;
-    top: 63%;
+    position: relative;
     width: 390px;
-    height: 100px;
+    height: 75px;
     background-color:rgb(241, 241, 241);
-    bottom: 10%;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.send-items{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.photo-container{
+    position: relative;
+    width: 100px;
+    height: 100%;
+    margin-left: 19px;
+    text-align: left;
+}
+
+.text-input{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.send-request{
+    position: relative;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    text-align: right;
+    margin-right: 19px;
 }
 
 .container{
@@ -77,6 +108,7 @@ p, h1, h2, h3, h4, h5, h6{
     width: 100px;
     height: 100%;
     margin-left: 19px;
+    text-align: left;
 }
 
 .close{
@@ -95,6 +127,7 @@ p, h1, h2, h3, h4, h5, h6{
     height: 40px;
     border: 0;
     border-radius: 50px;
+    background-color: white;
 }
 
 .btn-close{
@@ -104,6 +137,27 @@ p, h1, h2, h3, h4, h5, h6{
     height: 40px;
     border: 0;
     border-radius: 50px;
+    background-color: white;
+}
+
+.btn-photo{
+    margin-top: 19px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 50px;
+    background-color: slateblue;
+}
+
+.btn-send{
+    margin-top: 19px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 50px;
+    background-color: slateblue;
 }
 
 .fa-arrow-left{
@@ -112,6 +166,19 @@ p, h1, h2, h3, h4, h5, h6{
 
 .fa-window-close{
     color: slateblue;
+}
+
+.pfp-image{
+    width: 100%;
+    margin-top: 6px;
+}
+
+.fa-camera{
+    color: white;
+}
+
+.fa-paper-plane{
+    color: white;
 }
 
 .pfp-img{
@@ -127,13 +194,48 @@ p, h1, h2, h3, h4, h5, h6{
 .contact-name{
     position: relative;
     height: 100%;
-    margin-left: 20px;
+    margin-left: 15px;
+    margin-top: 2px;
 }
 
 .text-name{
     color: white;
+    font-weight: bold;
 }
 
 .text-id{
     color: white;
 }
+
+.message-input{
+    border-radius: 25px;
+    border: 0;
+    height: 40px;
+    width: 240px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+    margin-top: 19px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+    text-indent: 10px;
+}
+
+.message-box{
+    width: 60%;
+    height: auto !important;
+    background-color: rgb(241, 241, 241);
+    border-radius: 25px;
+}
+
+.line{
+    width: 100%;
+    height: auto !important;
+}
+
+.pfp-image-line{
+    width: 15%;
+    height: auto;
+}
+
