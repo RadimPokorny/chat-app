@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:grey
+}
+
+p, h1, h2, h3, h4, h5, h6{
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+.app-center{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+}
+
+.semi-div{
+    position: relative;
+    width: 390px;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;    
+}
+
+.contact-info{
+    position:sticky;
+    top: 10%;
+    width: 390px;
+    height: 100px;
+    background-color: slateblue;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.content{
+    position: sticky;
+    width: 390px;
+    top: 20%;
+    height: 400px;
+    background-color: white;
+    z-index: -1;
+
+}
+
+.send{
+    position: fixed;
+    top: 63%;
+    width: 390px;
+    height: 100px;
+    background-color:rgb(241, 241, 241);
+    bottom: 10%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.back{
+    position: relative;
+    width: 100px;
+    height: 100%;
+    margin-left: 19px;
+}
+
+.close{
+    position: relative;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    text-align: right;
+    margin-right: 19px;
+}
+
+.btn-back{
+    margin-top: 19px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 50px;
+}
+
+.btn-close{
+    margin-top: 19px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 50px;
+}
+
+.fa-arrow-left{
+    color: slateblue;
+}
+
+.fa-window-close{
+    color: slateblue;
+}
+
+.pfp-img{
+    position: relative;
+    height: 100%;
+    width: 40px;
+    height: 40px;
+    outline: solid 3px white;
+    outline-offset: -3px;
+    border-radius: 50px;
+}
+
+.contact-name{
+    position: relative;
+    height: 100%;
+    margin-left: 20px;
+}
+
+.text-name{
+    color: white;
+}
+
+.text-id{
+    color: white;
+}
