@@ -66,6 +66,7 @@ p, h1, h2, h3, h4, h5, h6{
 .content{
     position: relative;
     width: 390px;
+    max-width: 390px;
     height: 400px;
     background-color: white;
     overflow: auto;
@@ -262,12 +263,13 @@ textarea:focus, input:focus{
 .message-output p{
     word-wrap: break-word;
     overflow-wrap: break-word;
+    max-width: 150px;
 }
 
 .line{
     width: 100%;
     min-height: 40px;
-    height:fit-content;
+    max-width: 390px;
     display: table;
     margin-top: 20px;
 }
