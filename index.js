@@ -1,5 +1,7 @@
-// Funkce, která přidá váš div do kontejneru
 function addDivToContainer() {
+    
+    var content = document.getElementById("content");
+    
     var div = document.createElement("div");
     div.className = "line";
     
@@ -13,13 +15,12 @@ function addDivToContainer() {
     messageOutputDiv.className = "message-output";
     
     var messageParagraph = document.createElement("p");
-    messageParagraph.textContent = "This is some random message. Please do not take it seriously. Please bro, just do not.";
+    var message = document.getElementById("msg").value;
+    messageParagraph.textContent = message;
     
+    content.appendChild(div);
     messageOutputDiv.appendChild(messageParagraph);
     messageBoxDiv.appendChild(messageOutputDiv);
     sentDiv.appendChild(messageBoxDiv);
     div.appendChild(sentDiv);
-    
-    var container = document.getElementById("content");
-    container.appendChild(div);
 }

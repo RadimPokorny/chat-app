@@ -49,6 +49,7 @@ p, h1, h2, h3, h4, h5, h6{
     height: 400px;
     background-color: white;
     z-index: -1;
+    overflow: auto;
 
 }
 
@@ -232,7 +233,6 @@ textarea:focus, input:focus{
 }
 
 .message-output{
-    overflow: hidden;
     width: 95%;
     text-align: left !important;
     margin-left: 5px;
