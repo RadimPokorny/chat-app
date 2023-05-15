@@ -1,9 +1,8 @@
-function addDivToContainer() {
+function addDivToContainer() { 
     
     var message = document.getElementById("msg").value;
 
     if(message != ""){
-      var content = document.getElementById("content");
     
     var div = document.createElement("div");
     div.className = "line";
@@ -26,12 +25,21 @@ function addDivToContainer() {
     sentDiv.appendChild(messageBoxDiv);
     div.appendChild(sentDiv);
     document.getElementById("msg").value = "";  
-    }
+    scrollBot();  
+  }
+  
+}
+// Get the input field
+var input = document.getElementById("msg");
+
+function scrollBot(){
+
+  const content = document.getElementById("content");
+  content.scrollTop = document.getElementById('content').scrollHeight;
   
 }
 
-// Get the input field
-var input = document.getElementById("msg");
+
 
 // Execute a function when the user presses a key on the keyboard
 input.addEventListener("keypress", function(event) {
