@@ -6,13 +6,33 @@
 }
 
 body{
-    background-color:rgb(255, 255, 255)
+    background-color:rgb(255, 255, 255);
 }
 
 p, h1, h2, h3, h4, h5, h6{
     font-family: 'Varela Round', sans-serif;
-
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: rgb(241, 241, 241); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: slateblue;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(85, 72, 167); 
+  }
 
 .app-center{
     position: absolute;
@@ -48,9 +68,7 @@ p, h1, h2, h3, h4, h5, h6{
     width: 390px;
     height: 400px;
     background-color: white;
-    z-index: -1;
     overflow: auto;
-
 }
 
 .send{
@@ -229,13 +247,13 @@ textarea:focus, input:focus{
     background-color: rgb(241, 241, 241);
     border-radius: 25px;
     float: right;
-    margin-right: 95px;
+    margin-right: 85px;
 }
 
 .message-output{
-    width: 95%;
+    width: 85%;
     text-align: left !important;
-    margin-left: 5px;
+    margin-left: 10px;
     margin-right: 10px;
     padding: 10px;
     
@@ -248,8 +266,10 @@ textarea:focus, input:focus{
 
 .line{
     width: 100%;
-    min-height: 100px;
-    margin-top: 25px;
+    min-height: 40px;
+    height:fit-content;
+    display: table;
+    margin-top: 20px;
 }
 
 .received{
@@ -259,7 +279,7 @@ textarea:focus, input:focus{
 }
 
 .sent{
-    width: 100%;
+    width: 80%;
     height: auto !important;
     position: relative;
 }
@@ -271,15 +291,17 @@ textarea:focus, input:focus{
 }
 
 .sent .message-box{
-    background-color: slateblue;
-    color: white;
-}
-
-.sent .message-box{
     height: auto !important;
     background-color: slateblue;
     color: white;
     border-radius: 25px;
     float: right !important;
-    margin-right: 20px;
+    margin-right: -60px;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.line:first-child{
+    margin-top: 20px;
 }
