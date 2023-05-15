@@ -237,7 +237,7 @@ p, h1, h2, h3, h4, h5, h6{
     margin-top: 19px;
 }
 
-textarea:focus, input:focus{
+input, textarea:focus, input:focus{
     outline: none;
     text-indent: 10px;
 }

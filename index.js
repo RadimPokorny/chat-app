@@ -23,4 +23,17 @@ function addDivToContainer() {
     messageBoxDiv.appendChild(messageOutputDiv);
     sentDiv.appendChild(messageBoxDiv);
     div.appendChild(sentDiv);
+    document.getElementById("msg").value = "";
 }
+
+// Get the input field
+var input = document.getElementById("msg");
+
+// Execute a function when the user presses a key on the keyboard
+input.addEventListener("keypress", function(event) {
+  // If the user presses the "Enter" key on the keyboard
+  if (event.key === "Enter") {
+    document.getElementById("addButton").click();
+  }
+});
+
