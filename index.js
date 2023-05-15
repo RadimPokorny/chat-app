@@ -1,6 +1,9 @@
 function addDivToContainer() {
     
-    var content = document.getElementById("content");
+    var message = document.getElementById("msg").value;
+
+    if(message != ""){
+      var content = document.getElementById("content");
     
     var div = document.createElement("div");
     div.className = "line";
@@ -15,7 +18,6 @@ function addDivToContainer() {
     messageOutputDiv.className = "message-output";
     
     var messageParagraph = document.createElement("p");
-    var message = document.getElementById("msg").value;
     messageParagraph.textContent = message;
     
     content.appendChild(div);
@@ -23,7 +25,9 @@ function addDivToContainer() {
     messageBoxDiv.appendChild(messageOutputDiv);
     sentDiv.appendChild(messageBoxDiv);
     div.appendChild(sentDiv);
-    document.getElementById("msg").value = "";
+    document.getElementById("msg").value = "";  
+    }
+  
 }
 
 // Get the input field
