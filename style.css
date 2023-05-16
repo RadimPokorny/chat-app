@@ -10,14 +10,20 @@ html{
 }
 
 body{
-    background-color:#0b0c12;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    background-color:#0e0f12;
 }
 
 p, h1, h2, h3, h4, h5, h6{
     font-family: 'Varela Round', sans-serif;
+}
+
+a {
+    text-decoration: none;
+
+}
+a:link, a:visited { 
+    text-decoration: none;
+
 }
 
 ::-webkit-scrollbar {
@@ -26,7 +32,7 @@ p, h1, h2, h3, h4, h5, h6{
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background-color: #0b0c12; 
+    background-color: #0e0f12; 
     border-radius: 10px;
   }
    
@@ -39,41 +45,6 @@ p, h1, h2, h3, h4, h5, h6{
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #202833; 
-}
-
-.header-center{
-    width: 100%;
-    height: auto;
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    display: flex;
-}
-
-.header{
-    width: 390px;
-    height: auto;
-    position: relative;
-    align-self: center;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    background-color: #202833;
-    border-radius: 15px;
-    display: flex;
-    margin-top: 20px;
-}
-
-.alpha-version-header{
-    color: #e5fffd;
-    width: 360px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    padding-top: 15px;
-    padding-bottom: 15px;
 }
 
 .app-center{
@@ -93,14 +64,14 @@ p, h1, h2, h3, h4, h5, h6{
     flex-direction: column;
     align-items: center;
     border-radius: 36px;
-    margin-top: -35px;
+    margin-top: 140px;
 }
 
 .contact-info{
     position:relative;
     width: 390px;
     height: 75px;
-    background-color: #66fcf1;
+    background-color: #0094ff;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
@@ -110,7 +81,7 @@ p, h1, h2, h3, h4, h5, h6{
     width: 390px;
     max-width: 390px;
     height: 400px;
-    background-color: #0b0c12;
+    background-color: #0e0f12;
     overflow: auto;
 }
 
@@ -118,7 +89,7 @@ p, h1, h2, h3, h4, h5, h6{
     position: relative;
     width: 390px;
     height: 75px;
-    background-color:#66fcf1;
+    background-color:#0094ff;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     text-align: center;
@@ -189,7 +160,7 @@ p, h1, h2, h3, h4, h5, h6{
     height: 40px;
     border: 0;
     border-radius: 50px;
-    background-color: #0b0c12;
+    background-color: #0e0f12;
 }
 
 .btn-close{
@@ -199,7 +170,7 @@ p, h1, h2, h3, h4, h5, h6{
     height: 40px;
     border: 0;
     border-radius: 50px;
-    background-color: #0b0c12;
+    background-color: #0e0f12;
 }
 
 .btn-photo{
@@ -209,7 +180,7 @@ p, h1, h2, h3, h4, h5, h6{
     height: 40px;
     border: 0;
     border-radius: 50px;
-    background-color: #0b0c12;
+    background-color: #0e0f12;
 }
 
 .btn-send{
@@ -219,7 +190,7 @@ p, h1, h2, h3, h4, h5, h6{
     height: 40px;
     border: 0;
     border-radius: 50px;
-    background-color: #0b0c12;
+    background-color: #0e0f12;
 }
 
 .fa-arrow-left{
@@ -248,8 +219,6 @@ p, h1, h2, h3, h4, h5, h6{
     height: 100%;
     width: 40px;
     height: 40px;
-    outline: solid 3px #202833;
-    outline-offset: -3px;
     border-radius: 50px;
 }
 
@@ -261,12 +230,12 @@ p, h1, h2, h3, h4, h5, h6{
 }
 
 .text-name{
-    color: #202833;
+    color: #383838;
     font-weight: bold;
 }
 
 .text-id{
-    color: #202833;
+    color: #383838;
 }
 
 .message-input{
@@ -282,16 +251,17 @@ p, h1, h2, h3, h4, h5, h6{
 input, textarea:focus, input:focus{
     outline: none;
     text-indent: 10px;
-    background-color: #202833;
-    color: #e5fffd;
+    background-color: #1a1d21;
+    color: #ffffff;
 }
 
 .message-box{
     min-width: 50px;
     height: auto !important;
-    background-color: #202833;
+    background-color: #1a1d21;
     border-radius: 25px;
     float: left;
+    color: #ffffff;
 }
 
 .message-output{
@@ -322,7 +292,6 @@ input, textarea:focus, input:focus{
     width: 100%;
     height: auto !important;
     position: relative;
-    color: #e5fffd;
 }
 
 .sent{
@@ -340,8 +309,8 @@ input, textarea:focus, input:focus{
 
 .sent .message-box{
     height: auto !important;
-    background-color: #66fcf1;
-    color: #202833;
+    background-color: #0094ff;
+    color: #0e0f12;
     border-radius: 25px;
     float: right !important;
     margin-right: -50px;
@@ -358,3 +327,76 @@ input, textarea:focus, input:focus{
 .line:last-child{
     margin-bottom: 28px;
 }
+
+.fa-window-close{
+    font-size: 148px;
+}
+
+/* contacts style */
+
+.contacts{
+    display:inline;
+    position: absolute;
+    width: 30%;;
+    height: 100%;
+    border-right: 2px solid #0094ff;
+    overflow: hidden;
+}
+
+.contact-line{
+    width: 100%;
+    height: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    transition: 1s;
+    border-bottom: 1px solid #0094ff;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.last-msg{
+    color: #ffffff;
+}
+
+.nametext{
+    color: #ffffff;
+}
+
+.text-last{
+    position: relative;
+    margin-left: 12px;
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 760px) {
+    .contact-line{
+        height: 90px;
+        margin-top: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+    .contacts{
+        width: 100%;;
+        height: 100%;
+        border: none;
+    }
+    
+    .contact-line{
+        height: 50px;
+        margin-top: 0px;
+    }
+
+}
+
+.no-button{
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: 0;
+    background-color:#0e0f12 ;
+}
+
