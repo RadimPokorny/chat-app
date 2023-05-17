@@ -424,6 +424,12 @@ input, textarea:focus, input:focus{
     animation: fadein-l 2s;
 }
 
+.contact-line:hover{
+    outline: 75px solid #0094ff;
+    outline-offset: -75px;
+    color: #0094ff;
+}
+
 @keyframes fadein-l {
     from { transform: translateY(-5%);}
     to   { transform: translateY(0);}
@@ -476,14 +482,14 @@ input, textarea:focus, input:focus{
 .contacts-header-p{
     font-size: 36px;
     color: #ffffff;
-    margin-top: 14px;
+    margin-top: 21px;
     font-weight: bold;
 }
 
 @media only screen and (max-width: 485px) {
     .contacts-header-p{
         font-size: 30px;
-        margin-top: 18px;
+        margin-top: 25px;
     }
     .nametext{
         color: #ffffff;
@@ -493,7 +499,7 @@ input, textarea:focus, input:focus{
 @media only screen and (max-width: 405px) {
     .contacts-header-p{
         font-size: 24px;
-        margin-top: 24px;
+        margin-top: 30px;
     }
     .last-msg{display:none}
     .nametext{
