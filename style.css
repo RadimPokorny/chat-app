@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -10,11 +9,11 @@ html{
 }
 
 body{
-    background-color:#0e0f12;
+    
 }
 
 p, h1, h2, h3, h4, h5, h6{
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 a {
@@ -32,19 +31,30 @@ a:link, a:visited {
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background-color: #0e0f12; 
+    background-color: #f2f2f2; 
     border-radius: 10px;
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #202833;
+    background-image: linear-gradient(#75d3ff, #0094ff);
     border-radius: 10px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #202833; 
+    background-image: #007cd4;
+}
+
+button{
+    cursor: pointer;
+}
+
+.body-color{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#ffffff, #d6d6d6);
 }
 
 .app-center{
@@ -65,13 +75,19 @@ a:link, a:visited {
     align-items: center;
     border-radius: 36px;
     margin-top: 140px;
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from { transform: translateX(-100%);}
+    to   { transform: translateX(0);}
 }
 
 .contact-info{
     position:relative;
     width: 390px;
     height: 75px;
-    background-color: #0094ff;
+    background-image: linear-gradient(#75d3ff, #0094ff);
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
@@ -81,7 +97,7 @@ a:link, a:visited {
     width: 390px;
     max-width: 390px;
     height: 400px;
-    background-color: #0e0f12;
+    background-color: #ffffff;
     overflow: auto;
 }
 
@@ -89,7 +105,7 @@ a:link, a:visited {
     position: relative;
     width: 390px;
     height: 75px;
-    background-color:#0094ff;
+    background-image: linear-gradient(#75d3ff, #0094ff);
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     text-align: center;
@@ -109,7 +125,7 @@ a:link, a:visited {
     position: relative;
     width: 100px;
     height: 100%;
-    margin-left: 19px;
+    margin-left: 15px;
     text-align: left;
 }
 
@@ -160,7 +176,7 @@ a:link, a:visited {
     height: 40px;
     border: 0;
     border-radius: 50px;
-    background-color: #0e0f12;
+    background-color: #ffffff;
 }
 
 .btn-close{
@@ -170,7 +186,7 @@ a:link, a:visited {
     height: 40px;
     border: 0;
     border-radius: 50px;
-    background-color: #0e0f12;
+    background-color: #ffffff;
 }
 
 .btn-photo{
@@ -180,7 +196,7 @@ a:link, a:visited {
     height: 40px;
     border: 0;
     border-radius: 50px;
-    background-color: #0e0f12;
+    background-color: #ffffff;
 }
 
 .btn-send{
@@ -190,28 +206,50 @@ a:link, a:visited {
     height: 40px;
     border: 0;
     border-radius: 50px;
-    background-color: #0e0f12;
+    background-color: #ffffff;
 }
 
 .fa-arrow-left{
-    color: #e5fffd;
+    background: linear-gradient(#75d3ff, #0094ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 .fa-window-close{
-    color: #e5fffd;
+    background: linear-gradient(#75d3ff, #0094ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 .pfp-image{
     width: 100%;
+    margin-top: 30px;
+}
+
+.pfp-image-nd{
+    width: 100%;
     margin-top: 6px;
+    margin-left: -14px;
 }
 
 .fa-camera{
-    color: #e5fffd;
+    background: linear-gradient(#75d3ff, #0094ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 .fa-paper-plane{
-    color: #e5fffd;
+    background: linear-gradient(#75d3ff, #0094ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 .pfp-img{
@@ -222,20 +260,33 @@ a:link, a:visited {
     border-radius: 50px;
 }
 
+.pfp-img-contacts{
+    position: relative;
+    height: 100%;
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    outline: 4px solid #ffffff;
+}
+
 .contact-name{
     position: relative;
     height: 100%;
+    width: 100%;
     margin-left: 15px;
     margin-top: 2px;
+    text-align: left;
 }
 
 .text-name{
-    color: #383838;
+    color: #ffffff;
     font-weight: bold;
+    font-size: 18px;
 }
 
 .text-id{
-    color: #383838;
+    color: #ffffff;
+    font-size: 12px;
 }
 
 .message-input{
@@ -243,7 +294,7 @@ a:link, a:visited {
     border: 0;
     height: 40px;
     width: 240px;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 18px;
     margin-top: 19px;
 }
@@ -251,17 +302,17 @@ a:link, a:visited {
 input, textarea:focus, input:focus{
     outline: none;
     text-indent: 10px;
-    background-color: #1a1d21;
-    color: #ffffff;
+    background-color: #f2f2f2;
+    color: #0094ff;
 }
 
 .message-box{
     min-width: 50px;
     height: auto !important;
-    background-color: #1a1d21;
+    background-image: linear-gradient(#f2f2f2, #e2e1e1);
     border-radius: 25px;
     float: left;
-    color: #ffffff;
+    color: #000000;
 }
 
 .message-output{
@@ -307,10 +358,12 @@ input, textarea:focus, input:focus{
     margin-left: 15px;
 }
 
+
+
 .sent .message-box{
     height: auto !important;
-    background-color: #0094ff;
-    color: #0e0f12;
+    background-image: linear-gradient(#75d3ff, #0094ff);
+    color: #ffffff;
     border-radius: 25px;
     float: right !important;
     margin-right: -50px;
@@ -334,62 +387,67 @@ input, textarea:focus, input:focus{
 
 /* contacts style */
 
-.contacts{
-    display:inline;
+.center{
     position: absolute;
-    width: 30%;;
+    width: 100%;
     height: 100%;
-    border-right: 2px solid #0094ff;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
-.contact-line{
+.contacts{
+    position: relative;
     width: 100%;
-    height: 50px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
+    overflow: hidden;
+    bottom: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-line {
+    width: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 150px;
     transition: 1s;
-    border-bottom: 1px solid #0094ff;
+    border-radius: 25px;
     position: relative;
     overflow: hidden;
     display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background: linear-gradient(#75d3ff, #0094ff);
+    cursor: pointer;
+    animation: fadein-l 2s;
+}
+
+@keyframes fadein-l {
+    from { transform: translateY(-5%);}
+    to   { transform: translateY(0);}
 }
 
 .last-msg{
     color: #ffffff;
+    font-size: 18px;
 }
 
 .nametext{
     color: #ffffff;
+    font-size: 36px;
 }
 
 .text-last{
     position: relative;
-    margin-left: 12px;
-    margin-top: 5px;
-}
-
-@media only screen and (max-width: 760px) {
-    .contact-line{
-        height: 90px;
-        margin-top: 20px;
-    }
-
-}
-
-@media only screen and (max-width: 550px) {
-    .contacts{
-        width: 100%;;
-        height: 100%;
-        border: none;
-    }
-    
-    .contact-line{
-        height: 50px;
-        margin-top: 0px;
-    }
-
+    margin-left: 22px;
+    margin-top: -5px;
+    text-align: left;
+    display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 
 .no-button{
@@ -397,6 +455,49 @@ input, textarea:focus, input:focus{
     width: 100%;
     height: auto;
     border: 0;
-    background-color:#0e0f12 ;
+    background: linear-gradient(#75d3ff, #0094ff);
 }
 
+.contacts-header{
+    position:sticky;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(#75d3ff, #0094ff);
+    text-align: center;
+    animation: fadein-h 1s;
+}
+
+@keyframes fadein-h {
+    from { transform: translateY(-100%);}
+    to   { transform: translateY(0);}
+}
+
+.contacts-header-p{
+    font-size: 36px;
+    color: #ffffff;
+    margin-top: 14px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 485px) {
+    .contacts-header-p{
+        font-size: 30px;
+        margin-top: 18px;
+    }
+    .nametext{
+        color: #ffffff;
+        font-size: 24px;
+    }
+}
+@media only screen and (max-width: 405px) {
+    .contacts-header-p{
+        font-size: 24px;
+        margin-top: 24px;
+    }
+    .last-msg{display:none}
+    .nametext{
+        color: #ffffff;
+        font-size: 36px;
+    }
+}

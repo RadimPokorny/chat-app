@@ -8,18 +8,58 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <script src="contacts.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>   
     </head>
-    <body onload="">
-        <div class="contacts">
-                <div onclick="loadDoc()" class="contact-line">
+    <body>
+        <div class="body-color"></div>
+        <div class="center">
+
+            <div class="contacts-header">
+                <p class="contacts-header-p">Chat-app by Radim Pokorný</p>  
+            </div>
+            
+            <div class="contacts">
+                    <div onclick="location.href='index.html';" id="show-chat" class="contact-line">
+                        <div class="img-sec">
+                            <div class="pfp-image">
+                                <img src="pfp-test.jpg" alt="profile-picture" class="pfp-img-contacts">
+                            </div>
+                        </div>
+                        <div class="text-last">
+                            <div class="nametext">
+                                <p>Radim Pokorný</p>
+                            </div>
+                            <div class="last-msg">
+                                <p class="msfl" id="last-message">Idk random kravina whew</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                <div onclick="location.href='index.html';" id="show-chat" class="contact-line">
                     <div class="img-sec">
                         <div class="pfp-image">
-                            <img src="pfp-test.jpg" alt="profile-picture" class="pfp-img">
+                            <img src="karelnovak.png" alt="profile-picture" class="pfp-img-contacts">
                         </div>
                     </div>
                     <div class="text-last">
                         <div class="nametext">
-                            <p>Radimko</p>
+                            <p>Karel Novák</p>
+                        </div>
+                        <div class="last-msg">
+                            <p class="msfl" id="last-message">Idk random kravina whew</p>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="location.href='index.html';" id="show-chat" class="contact-line">
+                    <div class="img-sec">
+                        <div class="pfp-image">
+                            <img src="optimusprime.jpg" alt="profile-picture" class="pfp-img-contacts">
+                        </div>
+                    </div>
+                    <div class="text-last">
+                        <div class="nametext">
+                            <p>Optimus Prime</p3>
                         </div>
                         <div class="last-msg">
                             <p class="msfl" id="last-message">Idk random kravina whew</p>
@@ -27,43 +67,11 @@
                     </div>
                 </div>
 
-
-            <div onclick="loadDoc()" class="contact-line">
-                <div class="img-sec">
-                    <div class="pfp-image">
-                        <img src="pfp-test.jpg" alt="profile-picture" class="pfp-img">
-                    </div>
-                </div>
-                <div class="text-last">
-                    <div class="nametext">
-                        <p>Radimko</p>
-                    </div>
-                    <div class="last-msg">
-                        <p class="msfl" id="last-message">Idk random kravina whew</p>
-                    </div>
-                </div>
             </div>
 
-            <div onclick="loadDoc()" class="contact-line">
-                <div class="img-sec">
-                    <div class="pfp-image">
-                        <img src="pfp-test.jpg" alt="profile-picture" class="pfp-img">
-                    </div>
-                </div>
-                <div class="text-last">
-                    <div class="nametext">
-                        <p>Radimko</p3>
-                    </div>
-                    <div class="last-msg">
-                        <p class="msfl" id="last-message">Idk random kravina whew</p>
-                    </div>
-                </div>
+            <div id="chat-here" class="msg-section">
+
             </div>
-
-        </div>
-
-        <div id="chat-here" class="msg-section">
-
         </div>
         <script src="contacts.js"></script>
     </body>
