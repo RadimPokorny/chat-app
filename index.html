@@ -11,12 +11,25 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <script src="login.js"></script>
     </head>
     <body>
-        <div class="co">
-        <h1>Ladning page will be done soon.</h1>
-        <a href="contacts.html">Stránka na kontakty</a>
+        
+        <div class="form-center">
+        
+            <form action="contacts.html" method="post" class="login-form">
+
+            <label class="label-login">Login</label>
+
+            <input type="text" id="username-input" class="login-input" name="username" value="Username" onfocus="clearInputUser()">
+            
+            <input type="text" id="password-input" value="Password" onfocus="clearInputPass()" oninput="maskInput()" />
+
+            <button type="submit" value="Submit" class="login-button" name="submit">Submit</button>
+            </form>
+            <script src="login.js"></script>
+
         </div>
-        <script src="" async defer></script>
+
     </body>
 </html>
