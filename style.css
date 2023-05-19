@@ -550,13 +550,16 @@ input, textarea:focus, input:focus{
     width: 40%;
     text-align: center;
     justify-content: center;
-    color: #0094ff;
+    color: white;
     font-weight: bold;
     margin-bottom: 25px;
+    background: linear-gradient(#75d3ff, #0094ff);
+    border: 2px solid white;
 }
 
 .login-button:hover{
-    
+    color: #0094ff;
+    background: linear-gradient(#ffffff, #ffffff);
 }
 
 .label-login{
