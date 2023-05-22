@@ -12,6 +12,12 @@ body{
     
 }
 
+img {
+    -webkit-border-radius: 50px; 
+    border-radius: 50px; 
+    overflow: hidden;
+  }
+
 input, label, a, p, h1, h2, h3, h4, h5, h6{
     font-family: 'Inter', sans-serif;
 }
