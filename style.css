@@ -532,6 +532,10 @@ input, textarea:focus, input:focus{
     .contacts-header-p{
         font-size: 24px;
     }
+
+    .contact-line{
+        width: 75%;
+    }
     .last-msg{display:none}
     .nametext{
         color: #ffffff;
