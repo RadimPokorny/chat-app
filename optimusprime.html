@@ -90,7 +90,7 @@
             <div class="send-items">
                 
                 <div class="photo-container">
-                    <a href="contacts.html" class="pc"><button class="btn-photo"><i class='fa fa-camera fa-1x'></i></button></a>
+                   <button class="btn-photo" onclick="uploadImage()"><i class='fa fa-camera fa-1x'></i></button>
                 </div>
                 
                 <div class="text-input">
@@ -101,6 +101,10 @@
                     <a class="sr"><button id="addButton" class="btn-send" onclick="addDivToContainer()"><i class="fa fa-paper-plane" aria-hidden="true"></i></button></a>
                 </div>
             </div>
+
+            <form id="imageForm" style="display: none;">
+                <input id="imageInput" type="file" name="image" accept="image/*">
+            </form>
 
         </div>
 

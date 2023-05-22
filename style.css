@@ -362,6 +362,14 @@ input, textarea:focus, input:focus{
     max-width: 150px;
 }
 
+.message-output img{
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 0;
+
+    
+}
+
 .line{
     width: 100%;
     min-height: 40px;

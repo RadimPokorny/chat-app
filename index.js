@@ -50,3 +50,52 @@ input.addEventListener("keypress", function(event) {
 });
 
 
+function uploadImage() {
+  var fileInput = document.getElementById("imageInput");
+  fileInput.click();
+
+  fileInput.onchange = function () {
+    var file = fileInput.files[0];
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+      var imageSrc = e.target.result;
+      // Do something with the image source, e.g. display it or send it to the server
+      
+      var div = document.createElement("div");
+      div.className = "line";
+
+      var sentDiv = document.createElement("div");
+      sentDiv.className = "sent";
+
+      var messageBoxDiv = document.createElement("div");
+      messageBoxDiv.className = "message-box";
+
+      var messageOutputDiv = document.createElement("div");
+      messageOutputDiv.className = "message-output";
+
+      var imageElement = document.createElement("img");
+      imageElement.src = imageSrc;
+      imageElement.alt = "Uploaded Image";
+
+      messageOutputDiv.appendChild(imageElement);
+      messageBoxDiv.appendChild(messageOutputDiv);
+      sentDiv.appendChild(messageBoxDiv);
+      div.appendChild(sentDiv);
+
+      // Append the new message div to the content area
+      var content = document.getElementById("content");
+      content.appendChild(div);
+
+      // Clear the input field
+      document.getElementById("msg").value = "";
+
+      // Scroll to the bottom of the content area
+      scrollBot();
+    };
+
+    reader.readAsDataURL(file);
+  };
+}
+
+
