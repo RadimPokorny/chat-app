@@ -284,6 +284,10 @@ button{
     -khtml-border-radius: 50px;
 }
 
+.img-sec{
+    overflow: hidden;
+}
+
 .pfp-img-contacts{
     position: relative;
     height: 100%;
