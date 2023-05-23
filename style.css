@@ -72,7 +72,7 @@ button{
 .app-center{
     position: absolute;
     width: 100%;
-    height: 80%;
+    height: 100%;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -89,7 +89,6 @@ button{
     -moz-border-radius: 36px;
     border-radius: 36px;
     -khtml-border-radius: 36px;
-    margin-top: 140px;
     animation: fadein 1s;
 }
 
